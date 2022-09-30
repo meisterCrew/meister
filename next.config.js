@@ -1,23 +1,20 @@
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
-
-module.exports = (phase) => {
-  if (phase === PHASE_DEVELOPMENT_SERVER) {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  basePath: "/meister",
+  assetPrefix: "/meister",
+  images: { unoptimized: true },
+  // sassLoaderOptions: {
+  //   includePaths: ["./components"],
+  // },
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
     return {
-      env: {
-        mongodb_username: 'maximilian',
-        mongodb_password: '2YkcXq43KyPk0vqp',
-        mongodb_clustername: 'cluster0',
-        mongodb_database: 'my-site-dev',
-      },
+      "/": { page: "/" },
+      "/introduce": { page: "/introduce" },
     };
-  }
-
-  return {
-    env: {
-      mongodb_username: 'maximilian',
-      mongodb_password: '2YkcXq43KyPk0vqp',
-      mongodb_clustername: 'cluster0',
-      mongodb_database: 'my-site',
-    },
-  };
+  },
 };
+
+module.exports = nextConfig;
