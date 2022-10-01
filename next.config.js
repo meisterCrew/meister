@@ -2,7 +2,6 @@
 const nextConfig = {
   basePath: "/meister",
   assetPrefix: "/meister",
-  images: { unoptimized: true },
   // sassLoaderOptions: {
   //   includePaths: ["./components"],
   // },
