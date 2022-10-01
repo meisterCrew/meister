@@ -14,10 +14,13 @@ export default function MainNavigation() {
       <nav >
         <ul >
           <li>
-            <Link href="/posts">Posts</Link>
+            <Link href="/posts">게시글</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="/contact">연락처</Link>
+          </li>
+          <li>
+            <Link href="/members">부원 소개</Link>
           </li>
         </ul>
       </nav>
