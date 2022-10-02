@@ -1,6 +1,6 @@
 ---
 title: Meister에서 지원자를 모집합니다!
-excerpt: 글못쓰니까한범이가해줘라ㅎㅎ
+excerpt: Meister와 함께해주세요!!
 image: mastering-js-thumb.png
 isFeatured: false
 date: '2021-10-30'
