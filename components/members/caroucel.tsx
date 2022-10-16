@@ -1,5 +1,5 @@
 import { Carousel } from "@mantine/carousel";
-import css from "@mantine/styled-jsx/css";
+import css from "styled-jsx/css";
 import array from "../../members.json";
 import { Button, CSSObject, Popover, Text } from "@mantine/core";
 const stylef = css`
