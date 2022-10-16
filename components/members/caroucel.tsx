@@ -17,16 +17,14 @@ export default function MembersCaroucel() {
       {array.map((x, i) => {
         return (
           <div key={i}>
-            <div id="bu1">
-              <Text
-                key={i}
-                sx={{ color: "ButtonShadow" }}
-                size={40}
-                weight="bolder"
-              >
-                {x.name}
-              </Text>
-            </div>
+            <Text
+              key={i}
+              sx={{ color: "ButtonShadow" }}
+              size={40}
+              weight="bolder"
+            >
+              {x.name}
+            </Text>
             <Carousel
               key={i}
               sx={{ maxWidth: 320, backgroundColor: "GrayText" }}
@@ -40,9 +38,11 @@ export default function MembersCaroucel() {
               {x.members.map((x, i) => {
                 return (
                   <Carousel.Slide key={i}>
-                    <Text key={i} sx={styles}>
-                      {x.name}
-                    </Text>
+                    <div id= "bu1">
+                      <Text key={i} sx={styles}>
+                        {x.name}
+                      </Text>
+                    </div>
                     <Text key={i} sx={rolestyles}>
                       {x.role}
                     </Text>
