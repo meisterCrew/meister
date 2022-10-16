@@ -2,22 +2,23 @@ import { Carousel } from "@mantine/carousel";
 import css from "styled-jsx/css";
 import array from "../../members.json";
 import { Button, CSSObject, Popover, Text } from "@mantine/core";
-const stylef = css`
-  bu {
-    margin-left: 100px;
-    margin-top: 10px;
-    color: "ButtonShadow";
-  }
-`;
+
 export default function MembersCaroucel() {
   const styles: CSSObject = { color: "Background", margin: 10 };
   const rolestyles: CSSObject = { color: "Background", margin: 10 };
+  const stylef = css`
+    .bu {
+      margin-left: 100px;
+      margin-top: 10px;
+      color: "ButtonShadow";
+    }
+  `;
   return (
     <div>
       {array.map((x, i) => {
         return (
           <div key={i}>
-            <bu>
+            <div className="bu">
               <Text
                 key={i}
                 size={40}
@@ -25,7 +26,7 @@ export default function MembersCaroucel() {
                 >
                 {x.name}
               </Text>
-            </bu>
+            </div>
             <Carousel
               key={i}
               sx={{ maxWidth: 320, backgroundColor: "GrayText" }}
