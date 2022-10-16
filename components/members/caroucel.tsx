@@ -12,7 +12,7 @@ export default function MembersCaroucel() {
           <div key={i}>
             <Text
               key={i}
-              sx={{ color: "ButtonShadow", margin-left: 130px, margin-top: 30px }}
+              sx={{ color: "ButtonShadow" }}
               size={40}
               weight="bolder"
             >
