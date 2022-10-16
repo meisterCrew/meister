@@ -3,15 +3,8 @@ import array from "../../members.json";
 import { Button, CSSObject, Popover, Text } from "@mantine/core";
 
 export default function MembersCaroucel() {
-  const styles: CSSObject = { color: "Background", margin: 10 };
+  const styles: CSSObject = { color: "Background", margin-left: 130, margin-top: 30 };
   const rolestyles: CSSObject = { color: "Background", margin: 10 };
-
-  <style>
-    #bu1{
-      margin-left: 130px;
-      margin-top: 30px;
-    }
-  </style>
   return (
     <div>
       {array.map((x, i) => {
@@ -38,11 +31,9 @@ export default function MembersCaroucel() {
               {x.members.map((x, i) => {
                 return (
                   <Carousel.Slide key={i}>
-                    <div id= "bu1">
-                      <Text key={i} sx={styles}>
-                        {x.name}
-                      </Text>
-                    </div>
+                    <Text key={i} sx={styles}>
+                      {x.name}
+                    </Text>
                     <Text key={i} sx={rolestyles}>
                       {x.role}
                     </Text>
