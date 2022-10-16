@@ -3,7 +3,7 @@ import array from "../../members.json";
 import { Button, CSSObject, Popover, Text } from "@mantine/core";
 
 export default function MembersCaroucel() {
-  const styles: CSSObject = { color: "Background", margin-left: 130px, margin-top: 30px };
+  const styles: CSSObject = { color: "Background", margin: 30 };
   const rolestyles: CSSObject = { color: "Background", margin: 10 };
   return (
     <div>
