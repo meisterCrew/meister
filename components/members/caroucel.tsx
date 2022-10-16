@@ -6,19 +6,27 @@ export default function MembersCaroucel() {
   const styles: CSSObject = { color: "Background", margin: 10 };
   const rolestyles: CSSObject = { color: "Background", margin: 10 };
 
+  <style>
+    #bu1{
+      margin-left: 130px;
+      margin-top: 30px;
+    }
+  </style>
   return (
     <div>
       {array.map((x, i) => {
         return (
           <div key={i}>
-            <Text
-              key={i}
-              sx={{ color: "ButtonShadow" }}
-              size={40}
-              weight="bolder"
-            >
-              {x.name}
-            </Text>
+            <div id="bu1">
+              <Text
+                key={i}
+                sx={{ color: "ButtonShadow" }}
+                size={40}
+                weight="bolder"
+              >
+                {x.name}
+              </Text>
+            </div>
             <Carousel
               key={i}
               sx={{ maxWidth: 320, backgroundColor: "GrayText" }}
