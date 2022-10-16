@@ -6,6 +6,7 @@ const stylef = css`
   bu {
     margin-left: 100px;
     margin-top: 10px;
+    color: "ButtonShadow";
   }
   `
 export default function MembersCaroucel() {
@@ -19,7 +20,6 @@ export default function MembersCaroucel() {
             <bu>
               <Text
                 key={i}
-                sx={bustyles}
                 size={40}
                 weight="bolder"
                 >
