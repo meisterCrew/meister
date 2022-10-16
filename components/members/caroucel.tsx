@@ -8,7 +8,7 @@ const stylef = css`
     margin-top: 10px;
     color: "ButtonShadow";
   }
-  `
+`;
 export default function MembersCaroucel() {
   const styles: CSSObject = { color: "Background", margin: 10 };
   const rolestyles: CSSObject = { color: "Background", margin: 10 };
