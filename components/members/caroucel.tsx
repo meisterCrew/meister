@@ -1,12 +1,14 @@
 import { Carousel } from "@mantine/carousel";
+import css from "@mantine/styled-jsx/css";
 import array from "../../members.json";
 import { Button, CSSObject, Popover, Text } from "@mantine/core";
-
+const stylef = css`
+  bu {
+    margin-left: 100px;
+    margin-top: 10px;
+  }
+  `
 export default function MembersCaroucel() {
-  const bustyles: CSSObject = { 
-    color: "ButtonShadow",
-    margin: 15 auto 0 100
-  };
   const styles: CSSObject = { color: "Background", margin: 10 };
   const rolestyles: CSSObject = { color: "Background", margin: 10 };
   return (
@@ -14,14 +16,16 @@ export default function MembersCaroucel() {
       {array.map((x, i) => {
         return (
           <div key={i}>
-            <Text
-              key={i}
-              sx={bustyles}
-              size={40}
-              weight="bolder"
-              >
-              {x.name}
-            </Text>
+            <bu>
+              <Text
+                key={i}
+                sx={bustyles}
+                size={40}
+                weight="bolder"
+                >
+                {x.name}
+              </Text>
+            </bu>
             <Carousel
               key={i}
               sx={{ maxWidth: 320, backgroundColor: "GrayText" }}
